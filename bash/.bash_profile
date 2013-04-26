@@ -10,7 +10,7 @@ export PATH="/Applications//Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-#export DATABASE_URL=mysql://aarjav:taibu13instunt107@devtest.cl2zsx1gsfzj.us-east-1.rds.amazonaws.com/instuntdb
+export DATABASE_URL=mysql://aarjav:taibu13instunt107@devtest.cl2zsx1gsfzj.us-east-1.rds.amazonaws.com/instuntdb
 export DATABASE_URL=mysql://ramnath:9884328626@localhost/instuntdb
 export DEBUG=True
 export NOTIFICATIONS_EMAIL=testrequests@ridecell.com
@@ -36,5 +36,8 @@ export TAXI_HEAD_START_SECONDS=0
 export OUTGOING_SMS_NUMBER=4152555595
 export HTTPS_SUPPORT=False
 export INSTANTCAB_ENV=DEV
+export BALANCED_MARKETPLACE_URI=/v1/marketplaces/TEST-MP4uZMNb2rJcESi9JU2JNDvQ/
+export BALANCED_API_KEY=93c595ae77a711e2939e026ba7cd33d0
 
 export DJANGO_SETTINGS_MODULE='instunt.settings'
+

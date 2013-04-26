@@ -1,6 +1,10 @@
 "load pathogen
 execute pathogen#infect()
 
+" enable matchit plugin for use with html files
+" this allows pressing % to jump between matching html tags
+source $VIMRUNTIME/macros/matchit.vim
+
 "turn on syntax highlighting
 syntax on
 
@@ -27,4 +31,20 @@ let g:syntastic_always_populate_loc_list=1
 
 " Set syntax checkers for syntastic plugin
 let g:syntastic_python_checkers=['pyflakes']
+
+" Set indentation
+set smartindent
+set autoindent
+
+" Search
+set hlsearch
+set incsearch
+" ignore case in search patterns
+set ignorecase 
+
+" Blocks
+set showmatch " briefly jummp to matching bracket if insert one
+
+" print the line number in front of each line
+set number
 

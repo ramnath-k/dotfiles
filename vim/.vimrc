@@ -48,3 +48,8 @@ set showmatch " briefly jummp to matching bracket if insert one
 " print the line number in front of each line
 set number
 
+" Ctrl-P bindings
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd='CtrlP'
+let g:ctrl_working_path_mode='ra'
+

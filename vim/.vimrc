@@ -15,9 +15,9 @@ filetype plugin indent on
 set t_Co=256
 
 " Set tabs
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " Set default color scheme
@@ -52,4 +52,8 @@ set number
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd='CtrlP'
 let g:ctrl_working_path_mode='ra'
+
+" folding
+set foldmethod=syntax
+set foldnestmax=5
 

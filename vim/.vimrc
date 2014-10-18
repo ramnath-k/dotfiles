@@ -55,5 +55,12 @@ let g:ctrl_working_path_mode='ra'
 
 " folding
 set foldmethod=syntax
-set foldnestmax=5
+set foldnestmax=2
 
+" shortcuts
+:nmap \e :NERDTreeToggle<CR>
+
+" ejs templates
+au BufNewFile,BufRead *.ejs set filetype=html
+au BufNewFile,BufRead *.ejs set foldmethod=indent
+au BufNewFile,BufRead *.ejs set foldnestmax=10

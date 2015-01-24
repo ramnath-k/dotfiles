@@ -1,6 +1,8 @@
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
-fi
+source ~/.profile
+
+#if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#    . $(brew --prefix)/etc/bash_completion
+#fi
 
 if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
@@ -22,8 +24,8 @@ PATH=$PATH:$JAVA_HOME/bin
 PATH=$PATH:$JRE_HOME/bin
 
 export FOG_PROVIDER=AWS
-export AWS_ACCESS_KEY_ID=AKIAJDEL6K4UWDAEBTAA
-export AWS_SECRET_ACCESS_KEY=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
+export AWS_ACCESS_KEY_ID=
+export AWS_SECRET_ACCESS_KEY=
 export ASSET_SYNC_GZIP_COMPRESSION=true
 export ASSET_SYNC_EXISTING_REMOTE_FILES=keep
 export FOG_DIRECTORY=frilpdev
@@ -88,16 +90,16 @@ export EINSTEIN_NOSQL_DB_PORT=27018
 export EINSTEIN_LEO_FETCH_DISABLED=true
 
 # frilp autocomplete
-export FRILP_AUTOCOMPLETE_READ_ONLY_TOKEN="testtest"
-export FRILP_AUTOCOMPLETE_ADMIN_TOKEN="testtest"
+export FRILP_AUTOCOMPLETE_READ_ONLY_TOKEN=""
+export FRILP_AUTOCOMPLETE_ADMIN_TOKEN=""
 export FRILP_AUTOCOMPLETE_SERVICE_URL="http://localhost:3001/autocomplete/"
 export FRILP_AUTOCOMPLETE_SERVICE_ADMIN_URL="http://localhost:3001/autocomplete/"
 export FRILP_AUTOCOMPLETE_WEB_CONCURRENCY=4
 
 export MOBILE_ANDROID_PUSH_URL="https://android.googleapis.com/gcm/send"
-export MOBILE_ANDROID_PUSH_API_KEY="testtest"
+export MOBILE_ANDROID_PUSH_API_KEY=""
 
 export PYTHONPATH=$PYTHONPATH:/Users/ramnathkrishnamurthy/Work/einstein
 
-export EINSTEIN_ACCESS_TOKEN="testtest"
+export EINSTEIN_ACCESS_TOKEN=""
 

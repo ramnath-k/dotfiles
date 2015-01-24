@@ -6,7 +6,8 @@ if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
 fi
 
-export PATH=$PATH:/Applications//Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:~/bin
+export PATH=/usr/local/bin:/usr/local/sbin:~/bin:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
@@ -30,7 +31,8 @@ export MEMCACHIER_SERVERS="localhost:11211"
 
 export ROOT_PATH=/Users/ramnathkrishnamurthy/Work/autocomplete
 export INSTALL_PATH=$ROOT_PATH/Installations
-CATALINA_HOME=$INSTALL_PATH/tomcat/apache-tomcat-7.0.42
+#CATALINA_HOME=$INSTALL_PATH/tomcat/apache-tomcat-7.0.42
+CATALINA_HOME=/Users/ramnathkrishnamurthy/Work/leo_installations/tomcat/apache-tomcat-7.0.42
 PATH=$PATH:$CATALINA_HOME/bin
 ANT_HOME=$INSTALL_PATH/ant/apache-ant-1.9.3
 PATH=$PATH:$ANT_HOME/bin
@@ -59,16 +61,43 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # einstein
-export EINSTEIN_DB_HOSTNAME=einstein-production-db.ciqdxfwlj0ky.us-east-1.rds.amazonaws.com
+export EINSTEIN_DB_HOSTNAME=localhost
 export EINSTEIN_DB_PORT=5432
-export EINSTEIN_DB_NAME=einsteinProd
-export EINSTEIN_DB_USERNAME=rdsfrilpadmin
-export EINSTEIN_DB_PASSWORD=rdsfrilp13!#
+export EINSTEIN_DB_NAME=einsteinDev
+export EINSTEIN_DB_USERNAME=postgres
+export EINSTEIN_DB_PASSWORD=root
+
+#frilp
+export FRILP_DB_HOSTNAME=localhost
+export FRILP_DB_PORT=5432
+export FRILP_DB_NAME=frilp_beta_db_dev_beta_v2
+export FRILP_DB_USERNAME=postgres
+export FRILP_DB_PASSWORD=root
+
+#leo
+export LEO_DB_HOSTNAME=localhost
+export LEO_DB_PORT=5432
+export LEO_DB_NAME=leo
+export LEO_DB_USERNAME=postgres
+export LEO_DB_PASSWORD=root
+
+#einstein nosql
+export EINSTEIN_NOSQL_DB_NAME='frilp_dev'
+export EINSTEIN_NOSQL_DB_HOST='localhost'
+export EINSTEIN_NOSQL_DB_PORT=27018
+export EINSTEIN_LEO_FETCH_DISABLED=true
 
 # frilp autocomplete
-export FRILP_AUTOCOMPLETE_READ_ONLY_TOKEN="b105a2d7339d184c6943f53597a747df"
-export FRILP_AUTOCOMPLETE_ADMIN_TOKEN="198e65a7e7718483cc051a00816493bb"
+export FRILP_AUTOCOMPLETE_READ_ONLY_TOKEN="testtest"
+export FRILP_AUTOCOMPLETE_ADMIN_TOKEN="testtest"
 export FRILP_AUTOCOMPLETE_SERVICE_URL="http://localhost:3001/autocomplete/"
 export FRILP_AUTOCOMPLETE_SERVICE_ADMIN_URL="http://localhost:3001/autocomplete/"
 export FRILP_AUTOCOMPLETE_WEB_CONCURRENCY=4
+
+export MOBILE_ANDROID_PUSH_URL="https://android.googleapis.com/gcm/send"
+export MOBILE_ANDROID_PUSH_API_KEY="testtest"
+
+export PYTHONPATH=$PYTHONPATH:/Users/ramnathkrishnamurthy/Work/einstein
+
+export EINSTEIN_ACCESS_TOKEN="testtest"
 

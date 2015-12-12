@@ -64,3 +64,4 @@ set foldnestmax=2
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.ejs set foldmethod=indent
 au BufNewFile,BufRead *.ejs set foldnestmax=10
+

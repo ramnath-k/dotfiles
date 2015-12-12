@@ -22,3 +22,6 @@
 [submodule "vim/.vim/bundle/vim-unimpaired"]
 	path = vim/.vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "vim/.vim/bundle/jedi-vim"]
+	path = vim/.vim/bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git

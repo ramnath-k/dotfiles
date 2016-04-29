@@ -17,6 +17,8 @@ git submodule add https://github.com/tpope/vim-surround.git bundle/vim-surround
 git commit -m 'Added vim-surround'
 git submodule add https://github.com/tpope/vim-unimpaired.git bundle/vim-unimpaired
 git commit -m 'Added vim-unimpaired'
+git submodule add https://github.com/scrooloose/nerdcommenter.git bundle/nerdcommenter
+git commit -m "Added nerdcommenter"
 #git submodule add https://github.com/kchmck/vim-coffee-script.git bundle/vim-coffee-script
 #git commit -m 'Added vim-coffee-script'
 #git submodule add https://github.com/tpope/vim-rails.git bundle/vim-rails
